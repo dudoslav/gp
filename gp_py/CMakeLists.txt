@@ -66,4 +66,9 @@ target_link_libraries(
 	gp::gp
 )
 
+set_target_properties(gp_py PROPERTIES INSTALL_RPATH "\$ORIGIN")
+
+# install(IMPORTED_RUNTIME_ARTIFACTS TileDB::tiledb_shared DESTINATION lib)
+
 install(TARGETS ${SKBUILD_PROJECT_NAME} LIBRARY DESTINATION gp)
+
