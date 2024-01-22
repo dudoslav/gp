@@ -1,0 +1,14 @@
+[build-system]
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "gp_py"
+version = "0.0.1"
+dependencies = [
+	"gp"
+]
+
+[tool.scikit-build]
+# cmake.targets = ["install-gp"]
+

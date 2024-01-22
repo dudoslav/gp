@@ -1,3 +1,5 @@
+#include "gp.hh"
+
 #include <utility>
 #include <array>
 
@@ -5,10 +7,6 @@
 
 
 namespace gp {
-	enum class selector {
-		logo
-	};
-
 	static constexpr auto database = std::array{
 		"GP"
 	};

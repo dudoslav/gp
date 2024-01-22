@@ -1,0 +1,22 @@
+[project]
+name = "gp"
+version = "0.0.1"
+description = ""
+license = { text = "MIT" }
+readme = "README.md"
+classifiers = [
+]
+
+dependencies = [
+]
+
+[build-system]
+requires = ["scikit-build-core", "setuptools"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+wheel.py-api = "py2.py3"
+
+[tool.scikit-build.cmake.define]
+BUILD_SHARED_LIBS = "ON"
+CMAKE_TOOLCHAIN_FILE = "/home/dudoslav/Projects/vcpkg/scripts/buildsystems/vcpkg.cmake"
